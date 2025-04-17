@@ -12,6 +12,8 @@ dotenv.config();
 
 const app = express();
 
+const isDev = process.env.NODE_ENV !== "production";
+
 const config = {
   authRequired: false,
   auth0Logout: true,
@@ -25,16 +27,16 @@ const config = {
     logout: "/logout",
     login: "/login",
   },
-
   session: {
     absoluteDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
     cookie: {
-      domain: "jobfindr-q1cl.onrender.com",
-      secure: true,
-      sameSite: "None",
+      domain: isDev ? undefined : "jobfindr-q1cl.onrender.com",
+      secure: !isDev, // 🔥 This makes it false in dev, true in prod
+      sameSite: isDev ? "Lax" : "None",
     },
   },
 };
+
 
 app.use(
   cors({
