@@ -19,7 +19,6 @@
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
     --chart-1: 12 76% 61%;
@@ -46,7 +45,6 @@
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
     --chart-1: 220 70% 50%;
@@ -56,27 +54,11 @@
     --chart-5: 340 75% 55%;
   }
 }
-@layer base {
-
-  body {
-    @apply bg-background text-foreground;
-  }
-}
 
 body {
   background: #f0f5fa;
 }
 
-.custom-quill-editor .ql-toolbar {
-  @apply rounded-t-lg;
-  border: 1px solid #e2e8f0;
-}
-
-.custom-quill-editor .ql-container {
-  @apply rounded-bl-lg rounded-br-lg;
-
-  border: 1px solid #e2e8f0;
-}
 
 .custom-quill-editor .ql-editor {
   min-height: 400px;
@@ -138,9 +120,3 @@ body {
   );
   filter: grayscale(1);
 }
-@layer base {
-  * {
-    @apply border border-gray-200;
-  }
-}
-

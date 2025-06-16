@@ -6,7 +6,7 @@ import { useGlobalContext } from "@/context/globalContext";
 import { useJobsContext } from "@/context/jobsContext";
 import { Job } from "@/types/types";
 import formatMoney from "@/utils/formatMoney";
-import { formatDates } from "@/utils/fotmatDates";
+import { formatDates } from "@/utils/formatDates";
 import { Bookmark } from "lucide-react";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";

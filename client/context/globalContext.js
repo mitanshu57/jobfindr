@@ -9,7 +9,8 @@ import React, {
   import { useRouter } from "next/navigation";
   
   const GlobalContext = createContext();
-  
+  axios.defaults.baseURL = "/api";
+
   axios.defaults.baseURL = "https://jobfindr-q1cl.onrender.com";
   axios.defaults.withCredentials = true;
   

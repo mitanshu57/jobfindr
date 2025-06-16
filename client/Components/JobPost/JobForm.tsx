@@ -3,7 +3,7 @@ import { useGlobalContext } from "@/context/globalContext";
 import React from "react";
 import JobTitle from "./JobTitle";
 import JobDetails from "./JobDetails";
-import JobSkills from "./JobSkills ";
+import JobSkills from "./JobSkills";
 import JobLocation from "./JobLocation";
 import { useJobsContext } from "@/context/jobsContext";
 

@@ -4,7 +4,7 @@ import { Job } from "@/types/types";
 import { useJobsContext } from "@/context/jobsContext";
 import Image from "next/image";
 import { CardTitle } from "../ui/card";
-import { formatDates } from "@/utils/fotmatDates";
+import { formatDates } from "@/utils/formatDates";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Pencil, Trash } from "lucide-react";

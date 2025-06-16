@@ -8,8 +8,8 @@ import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 import { Separator } from "../ui/separator";
 import formatMoney from "@/utils/formatMoney";
-import { formatDates } from "@/utils/fotmatDates";
-import { bookmark, bookmarkEmpty } from "@/utils/Icons";
+import {formatDates} from "@/utils/formatDates";
+import {bookmark, bookmarkEmpty} from "@/utils/Icons";
 
 interface JobProps {
   job: Job;
